@@ -2,7 +2,7 @@ package scheduler;
 
 public interface Scheduler {
 	
-	public void getNextCall();
-	public void sendCallToAgent();
+	public abstract void getNextCall();
+	public abstract void sendCallToAgent();
 
 }
