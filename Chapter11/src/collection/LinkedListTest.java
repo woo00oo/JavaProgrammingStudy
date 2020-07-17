@@ -19,7 +19,7 @@ public class LinkedListTest {
 		System.out.println(myList);
 		
 		for(int i = 0; i <myList.size(); i ++) {
-			String s = myList.get(i);
+			String s = myList.get(i); //set인터페이스에서는 get메소드가 존재하지 않음
 			System.out.println(s);
 		}
 		
