@@ -1,7 +1,7 @@
-package collection;
+package treeset;
 
 
-public class Member implements Comparable<Member>{
+public class Member implements Comparable<Member> {
 
 	
 	private int memberId;
@@ -35,12 +35,25 @@ public class Member implements Comparable<Member>{
 	}
 
 	@Override
+	public boolean equals(Object obj) {
+		if ( obj instanceof Member) {
+			Member member = (Member)obj;
+			return (this.memberId ==member.memberId);
+		}
+		return false;
+	}
+
+	@Override
+	public int hashCode() {
+		return memberId;
+	}
+
+	@Override
 	public int compareTo(Member member) {
-		
-		return (this.memberId - member.memberId);
+		return (this.memberId  - member.memberId); 
 	}
 	
-	// 
+	
 	
 	
 	
