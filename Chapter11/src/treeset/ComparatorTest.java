@@ -12,7 +12,7 @@ class MyCompare implements Comparator<String>{
 	}
 	
 }
-
+ 
 
 public class ComparatorTest {
 
