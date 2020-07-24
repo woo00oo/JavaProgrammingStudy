@@ -14,6 +14,9 @@ public class IntArrayTest {
 		
 		System.out.println(sum);
 		System.out.println(count);
+		
+		System.out.println(Arrays.stream(arr).reduce(0, (a,b)->a+b));
+											  //초기값       전달 되는 요소  각 요소가 수행해야 할 기능
 	}
 
 }
