@@ -44,7 +44,7 @@ public class ArrayListStreamTest {
 		System.out.println();
 		
 		sList.stream().map(s ->s.length()).forEach(n -> System.out.println(n));
-		
+		//
 		
 	}
 
