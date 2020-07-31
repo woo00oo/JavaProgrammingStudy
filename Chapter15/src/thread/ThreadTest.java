@@ -23,6 +23,7 @@ public class ThreadTest {
 
 	public static void main(String[] args) {
 		
+		//메인 쓰레드 +MyThread 2개가 실행됨
 		System.out.println("start");
 		MyThread th1 = new MyThread();
 		MyThread th2 = new MyThread();
@@ -30,6 +31,8 @@ public class ThreadTest {
 		th1.start();
 		th2.start();
 		System.out.println("end");
+		
+		
 	}
 
 }
